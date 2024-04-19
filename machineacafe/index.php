@@ -109,22 +109,26 @@
 
     // Recup le nom de la boisson dans le formulaire 
 
-    $nomBoisson = $_GET['boisson'];
+    
 
     // Condition pour une entrée autre
 
-
-
-    foreach ($boissons as $key => $boisson) {
-        if ($boisson["title"] === $nomBoisson) {
-            echo ("ok !");
-        } else {
-            echo ("non !");
+    if(isset($_GET['boisson'])) {
+        $nomBoisson = $_GET['boisson'];
+        
+        foreach ($boissons as $key => $boisson) {
+            if ($boisson["title"] === $nomBoisson) {
+                echo ("ok !");
+            } else {
+                echo ("non !");
+            }
         }
+    
+    
+        var_dump(array_column($boissons, "title"));
     }
 
-
-    var_dump($boisson["title"]);
+    
 
 
 
