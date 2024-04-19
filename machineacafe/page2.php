@@ -21,7 +21,7 @@
         <h2 class="text-center">Un peu de sucre ? 😺</h2>
     </div>
 
-    <form method="POST" action="page3.php">
+    <form method="GET" action="page3.php">
         <div class=" col-2 m-5 ">
             <label for="exampleFormControlInput1" class="form-label">Combien de sucres ?</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Combien ?" name="sucre">
